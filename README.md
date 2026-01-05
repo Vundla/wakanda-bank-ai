@@ -64,6 +64,36 @@ curl http://localhost:5000/health
 
 ---
 
+## ☁️ Deploy to Fly.io (Cloud Deployment)
+
+For cloud deployment to Fly.io (5-10 minutes):
+
+### Quick Deploy Script
+
+```bash
+# Run the automated deployment script
+./deploy-fly.sh
+
+# Or manually deploy backend
+fly launch --config fly.toml --copy-config --yes
+fly deploy
+```
+
+### What You Get
+- ✅ **Automatic HTTPS** - SSL/TLS certificates
+- ✅ **Global CDN** - Fast worldwide access
+- ✅ **Auto-scaling** - Handles traffic spikes
+- ✅ **Health monitoring** - Auto-restart on failures
+- ✅ **Free tier** - 256MB RAM, perfect for this app
+
+### Your App URLs
+- Backend: `https://wakanda-bank-backend.fly.dev`
+- Frontend: `https://wakanda-bank-frontend.fly.dev`
+
+📚 **Full Guide:** See [FLY_DEPLOYMENT.md](FLY_DEPLOYMENT.md) for complete instructions
+
+---
+
 ## 🏗️ Architecture
 
 ### Backend (Node.js/Express)
